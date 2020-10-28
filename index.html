@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonathan Lecompte</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fullpage/fullpage.min.css">
+        <link rel="icon" href="medias/imgSite/myhead.png">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="fullpage/jquery.fullpage.js"></script>
+    </head>
+ 
+    <body style="overflow: hidden;">
+        <nav class="menu_nav">
+                <div class="menu_container">
+                    <div class="titles">
+                        <ul>
+                          <li><a href="index.html" class="logo_lettres"><img src="medias/logo.png" class="logo_perso"></a></li>
+                        </ul>
+                    </div>
+                    <a class="bouton_menu" href="menu.html" id="btnmenu">Menu</a>
+                </div>
+        </nav>
+        <div id="fullpage">
+        <section class="header_accueil">
+            <h1 class="my-name">JONATHAN LECOMPTE</h1>
+            <img src="medias/imgSite/iconfleche.png">
+        </section>
+        
+        <section class="about_me" id="particles-js">
+            <div class="container-about" id="">
+                <span>À PROPOS</span>
+                <span>Bonjour ! Je m'appelle Jonathan Lecompte, j'ai 19 ans et je suis actuellement en deuxième année de DUT Métiers du Multimédia et de l'Internet à Laval. J'habite tout près de Rennes en Bretagne. Je suis passionné de cinéma, de sport et de graphisme. Après mes études j'aimerai pouvoir travailler dans la communication digitale et marketing ou dans le graphisme. Je suis à la recherche d'un stage en agence de communication, si vous êtes intéressé par mon profil n'hésitez pas à me contacter via le formulaire ou par mail: <strong>jonathanlecompte.18@gmail.com</strong>
+                </span>
+            </div>
+        </section>
+        
+        <section class="me_contacter" id="contacter">
+            <div class="div-form">
+                <p>SEND E-MAIL</p>
+                <form class="contact-form" action="contactform.php" method="post">
+                    <input type="text" name="name" placeholder="Full name">
+                    <input type="text" name="mail" placeholder="Your e-mail">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message" rows="5px" cols="50px"></textarea>
+                    <button type="submit" name="submit">SEND MAIL</button>
+                </form>
+            </div>
+            <footer>
+                <h3>Contact : E-mail : jonathanlecompte.18@gmail.com</h3>
+                <a href="https://fr-fr.facebook.com/people/Jonathan-Lecompte/100009683825753" target="_blank"><img src="medias/reseaux/facebook.png"></a> 
+                <a href="https://fr.linkedin.com/in/jonathan-lecompte-476a391ab?trk=people-guest_people_search-card" target="_blank"><img src="medias/reseaux/linkedin.png"></a> 
+                <a href="https://www.instagram.com/jonathanlcp/" target="_blank"><img src="medias/reseaux/instagram.png"></a>  
+            </footer>
+        </section>
+    </div>
+        <script type="text/javascript">
+            $('#fullpage').fullpage();
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="medias/scroll-out.js"></script>
+        <script src="fullpage/fullpage.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <script src="particules/particles.js"></script>
+        <script src="particules/app.js"></script>
+        <script src="particules/particles.min.js"></script>
+    </body>
+    
+</html>
+
+
+
+
+
