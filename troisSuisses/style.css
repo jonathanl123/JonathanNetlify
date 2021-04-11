@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: black;
+}
+
+html{
+    overflow-y: scroll;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 15px 0;
+    background-color: #000;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 200px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logoSuisses{
+    margin: auto 0;
+    height: 100%;
+    width: 100px;
+    display: flex;
+}
+
+nav ul li, .secNav ul li:hover{
+    cursor: pointer;
+}
+
+
+/******* Barre navigation ******/
+
+
+.secNav{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 30px 0;
+}
+
+.secNav ul li{
+    display: inline-block;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.searchBar{
+    border: 2px solid black;
+    outline: none;
+    border-radius: 40px;
+    padding: 2px 0 2px 5px;
+}
+
+
+
+
+/****** Barre orange *****/
+
+.barReduc{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+    background-color: #ED1B24;
+}
+
+.barReduc ul li{
+    display: flex;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+
+
+
+.produit{
+    display: flex;
+    background-color: #fff;
+    height: 80vh;
+}
+
+.apercu{
+    display: flex;
+    width: 50vw;
+}
+
+.sectionPetitesShoes{
+    position: absolute;
+    width: 20vw;
+    height: 80vh;
+}
+
+.litProd:nth-child(1){
+    margin-top: 10vh;
+}
+
+.litProd{
+    margin-top: 15vh;
+    left: 20px;
+}
+
+.litProd img{
+    position: absolute;
+    height: 10vh;
+    left: 20px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.bigProd{
+    position: relative;
+    margin: auto 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    left: 30%;
+    top: -5%;
+}
+
+.bigProd img{
+    position: absolute;
+    width: 70%;
+    margin: auto 0;
+}
+
+
+
+.description{
+    display: flex;
+    width: 50vw;
+}
+
+.details{
+    position: absolute;
+    top: 100vh;
+    display: flex;
+    height: auto;
+    left: 20px;
+}
+
+.details ul{
+    width: 50vw;
+    height: auto;
+}
+
+.details ul li{
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+iframe{
+    width:100vw;
+    height:100vh;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color: #000;
+    justify-content: space-around;
+}
+
+footer ul{
+    padding: 30px 0;
+}
+
+footer ul li{
+    color: white;
+    display: inline-block;
+    margin-left: 100px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
