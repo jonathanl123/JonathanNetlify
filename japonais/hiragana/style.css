@@ -1,12 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     color: black;
-}
-
-html{
-    overflow-x: hidden;
 }
 
 .correction{
@@ -31,7 +26,7 @@ nav ul li{
     font-weight: bold;
 }
 
-main{
+body{
     background-image: url(medias/fond.jpg);
     background-repeat: no-repeat;
     background-size: cover;
