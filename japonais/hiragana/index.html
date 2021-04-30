@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Apprendre hiragana</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li>Apprendre les hiragana</li>
+                <li>Apprendre les katakana</li>
+            </ul>
+        </nav>
+        <button class="btnAleat" onclick="divAleat()">Générer des cases aléatoires</button>
+        <form id="formParent">
+                <div>あ<input pattern="(a)" maxlength="3"></div>
+                <div>い<input pattern="(i)" maxlength="3"></div>
+                <div>う<input pattern="(u)" maxlength="3"></div>
+                <div>え<input pattern="(e)" maxlength="3"></div>
+                <div>お<input pattern="(o)" maxlength="3"></div>
+            
+                <div>か<input pattern="(ka)" maxlength="3"></div>
+                <div>き<input pattern="(ki)" maxlength="3"></div>
+                <div>く<input pattern="(ku)" maxlength="3"></div>
+                <div>け<input pattern="(ke)" maxlength="3"></div>
+                <div>こ<input pattern="(ko)" maxlength="3"></div>
+            
+                <div>さ<input pattern="(sa)" maxlength="3"></div>
+                <div>し<input pattern="(shi)" maxlength="3"></div>
+                <div>す<input pattern="(su)" maxlength="3"></div>
+                <div>せ<input pattern="(se)" maxlength="3"></div>
+                <div>そ<input pattern="(so)" maxlength="3"></div>
+            
+                <div>た<input pattern="(ta)" maxlength="3"></div>
+                <div>ち<input pattern="(chi)" maxlength="3"></div>
+                <div>つ<input pattern="(tsu)" maxlength="3"></div>
+                <div>て<input pattern="(te)" maxlength="3"></div>
+                <div>と<input pattern="(to)" maxlength="3"></div>
+            
+                <div>な<input pattern="(na)" maxlength="3"></div>
+                <div>に<input pattern="(ni)" maxlength="3"></div>
+                <div>ぬ<input pattern="(nu)" maxlength="3"></div>
+                <div>ね<input pattern="(ne)" maxlength="3"></div>
+                <div>の<input pattern="(no)" maxlength="3"></div>
+            
+                <div>は<input pattern="(ha)" maxlength="3"></div>
+                <div>ひ<input pattern="(hi)" maxlength="3"></div>
+                <div>ふ<input pattern="(fu)" maxlength="3"></div>
+                <div>へ<input pattern="(he)" maxlength="3"></div>
+                <div>ほ<input pattern="(ho)" maxlength="3"></div>
+            
+                <div>ま<input pattern="(ma)" maxlength="3"></div>
+                <div>み<input pattern="(mi)" maxlength="3"></div>
+                <div>む<input pattern="(mu)" maxlength="3"></div>
+                <div>め<input pattern="(me)" maxlength="3"></div>
+                <div>も<input pattern="(mo)" maxlength="3"></div>
+           
+                <div>や<input pattern="(ya)" maxlength="3"></div>
+                <div>ゆ<input pattern="(yu)" maxlength="3"></div>
+                <div>よ<input pattern="(yo)" maxlength="3"></div>
+           
+                <div>ら<input pattern="(ra)" maxlength="3"></div>
+                <div>り<input pattern="(ri)" maxlength="3"></div>
+                <div>る<input pattern="(ru)" maxlength="3"></div>
+                <div>れ<input pattern="(re)" maxlength="3"></div>
+                <div>ろ<input pattern="(ro)" maxlength="3"></div>
+            
+                <div>わ<input pattern="(wa)" maxlength="3"></div>
+                <div>を<input pattern="(wo)" maxlength="3"></div>
+            
+                <div>ん<input pattern="(n)" maxlength="3"></div>
+            
+            <input type="submit" value="valider">
+        </form>
+        <div class="textAleat">
+            <button class="btnAleat" onclick="aleat()">Générer un texte aléatoire</button>
+            <div id="textAleat"></div>
+            <input type="text" maxlength="20">
+        </div>
+        <button onclick="affiche()">Afficher la correction</button>
+        <button onclick="cacher()">Cacher la correction</button>
+        
+        <table class="correction" id="correction">
+            <tr>
+                <td>a</td>
+                <td>i</td>
+                <td>u</td>
+                <td>e</td>
+                <td>o</td>
+            </tr>
+            <tr>
+                <td><div id="a">あ</div></td>
+                <td><div>い</div></td>
+                <td><div>う</div></td>
+                <td><div>え</div></td>
+                <td><div>お</div></td>
+            </tr>
+            <tr>
+                <td>ka</td>
+                <td>ki</td>
+                <td>ku</td>
+                <td>ke</td>
+                <td>ko</td>
+            </tr>
+            <tr>
+                <td><div>か</div></td>
+                <td><div>き</div></td>
+                <td><div>く</div></td>
+                <td><div>け</div></td>
+                <td><div>こ</div></td>
+            </tr>
+            <tr>
+                <td>sa</td>
+                <td>shi</td>
+                <td>su</td>
+                <td>se</td>
+                <td>so</td>
+            </tr>
+            <tr>
+                <td><div>さ</div></td>
+                <td><div>し</div></td>
+                <td><div>す</div></td>
+                <td><div>せ</div></td>
+                <td><div>そ</div></td>
+            </tr>
+            <tr>
+                <td>ta</td>
+                <td>chi</td>
+                <td>tsu</td>
+                <td>te</td>
+                <td>to</td>
+            </tr>
+            <tr>
+                <td><div>た</div></td>
+                <td><div>ち</div></td>
+                <td><div>つ</div></td>
+                <td><div>て</div></td>
+                <td><div>と</div></td>
+            </tr>
+            <tr>
+                <td>na</td>
+                <td>ni</td>
+                <td>nu</td>
+                <td>ne</td>
+                <td>no</td>
+            </tr>
+            <tr>
+                <td><div>な</div></td>
+                <td><div>に</div></td>
+                <td><div>ぬ</div></td>
+                <td><div>ね</div></td>
+                <td><div>の</div></td>
+            </tr>
+            <tr>
+                <td>ha</td>
+                <td>hi</td>
+                <td>fu</td>
+                <td>he</td>
+                <td>ho</td>
+            </tr>
+            <tr>
+                <td><div>は</div></td>
+                <td><div>ひ</div></td>
+                <td><div>ふ</div></td>
+                <td><div>へ</div></td>
+                <td><div>ほ</div></td>
+            </tr>
+            <tr>
+                <td>ma</td>
+                <td>mi</td>
+                <td>mu</td>
+                <td>me</td>
+                <td>mo</td>
+            </tr>
+            <tr>
+                <td><div>ま</div></td>
+                <td><div>み</div></td>
+                <td><div>む</div></td>
+                <td><div>め</div></td>
+                <td><div>も</div></td>
+            </tr>
+            <tr>
+                <td>ya</td>
+                <td>yu</td>
+                <td>yo</td>
+            </tr>
+            <tr>
+                <td><div>や</div></td>
+                <td><div>ゆ</div></td>
+                <td><div>よ</div></td>
+            </tr>
+            <tr>
+                <td>ra</td>
+                <td>ri</td>
+                <td>ru</td>
+                <td>re</td>
+                <td>ro</td>
+            </tr>
+            <tr>
+                <td><div>ら</div></td>
+                <td><div>り</div></td>
+                <td><div>る</div></td>
+                <td><div>れ</div></td>
+                <td><div>ろ</div></td>
+            </tr>
+            <tr>
+                <td>wa</td>
+                <td>wo</td>
+            </tr>
+            <tr>
+                <td><div>わ</div></td>
+                <td><div>を</div></td>
+            </tr>
+            <tr>
+                <td>n</td>
+            </tr>
+            <tr>
+                <td><div>ん</div></td>
+            </tr>
+        </table>
+    </main>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</body>
+</html>
+
+　
+
+
+
+
+
+
+
+
+
