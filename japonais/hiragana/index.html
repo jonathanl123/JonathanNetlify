@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Apprendre hiragana</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,7 +18,8 @@
             </ul>
         </nav>
         <button class="btnAleat" onclick="divAleat()">Générer des cases aléatoires</button>
-        <form id="formParent">
+        <form>
+            <div class="divparent">
                 <div>あ<input pattern="(a)" maxlength="3"></div>
                 <div>い<input pattern="(i)" maxlength="3"></div>
                 <div>う<input pattern="(u)" maxlength="3"></div>
@@ -76,7 +76,7 @@
                 <div>を<input pattern="(wo)" maxlength="3"></div>
             
                 <div>ん<input pattern="(n)" maxlength="3"></div>
-            
+            </div>
             <input type="submit" value="valider">
         </form>
         <div class="textAleat">
@@ -226,10 +226,8 @@
             </tr>
         </table>
     </main>
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
