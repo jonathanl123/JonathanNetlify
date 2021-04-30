@@ -11,6 +11,7 @@
 </head>
 <body>
     <main>
+        <audio src="medias/musique.mp3" controls loop></audio>
         <nav>
             <ul>
                 <li>Apprendre les hiragana</li>
@@ -18,9 +19,9 @@
             </ul>
         </nav>
         <button class="btnAleat" onclick="divAleat()">Générer des cases aléatoires</button>
-        <form>
+        <form id="envoie">
             <div class="divparent">
-                <div>あ<input pattern="(a)" maxlength="3"></div>
+                <div>あ<input pattern="(a)" maxlength="3" title="Vous avez saisie le mauvais caractère"></div>
                 <div>い<input pattern="(i)" maxlength="3"></div>
                 <div>う<input pattern="(u)" maxlength="3"></div>
                 <div>え<input pattern="(e)" maxlength="3"></div>
@@ -77,15 +78,10 @@
             
                 <div>ん<input pattern="(n)" maxlength="3"></div>
             </div>
-            <input type="submit" value="valider">
+            <input class="valid" type="submit" value="valider">
         </form>
-        <div class="textAleat">
-            <button class="btnAleat" onclick="aleat()">Générer un texte aléatoire</button>
-            <div id="textAleat"></div>
-            <input type="text" maxlength="20">
-        </div>
-        <button onclick="affiche()">Afficher la correction</button>
-        <button onclick="cacher()">Cacher la correction</button>
+        <button class="aff" onclick="affiche()">Afficher la correction</button>
+        <button class="hide" onclick="cacher()">Cacher la correction</button>
         
         <table class="correction" id="correction">
             <tr>
@@ -96,11 +92,11 @@
                 <td>o</td>
             </tr>
             <tr>
-                <td><div id="a">あ</div></td>
-                <td><div>い</div></td>
-                <td><div>う</div></td>
-                <td><div>え</div></td>
-                <td><div>お</div></td>
+                <td class="tabcaract">あ</td>
+                <td class="tabcaract">い</td>
+                <td class="tabcaract">う</td>
+                <td class="tabcaract">え</td>
+                <td class="tabcaract">お</td>
             </tr>
             <tr>
                 <td>ka</td>
@@ -110,11 +106,11 @@
                 <td>ko</td>
             </tr>
             <tr>
-                <td><div>か</div></td>
-                <td><div>き</div></td>
-                <td><div>く</div></td>
-                <td><div>け</div></td>
-                <td><div>こ</div></td>
+                <td class="tabcaract">か</td>
+                <td class="tabcaract">き</td>
+                <td class="tabcaract">く</td>
+                <td class="tabcaract">け</td>
+                <td class="tabcaract">こ</td>
             </tr>
             <tr>
                 <td>sa</td>
@@ -124,11 +120,11 @@
                 <td>so</td>
             </tr>
             <tr>
-                <td><div>さ</div></td>
-                <td><div>し</div></td>
-                <td><div>す</div></td>
-                <td><div>せ</div></td>
-                <td><div>そ</div></td>
+                <td class="tabcaract">さ</td>
+                <td class="tabcaract">し</td>
+                <td class="tabcaract">す</td>
+                <td class="tabcaract">せ</td>
+                <td class="tabcaract">そ</td>
             </tr>
             <tr>
                 <td>ta</td>
@@ -138,11 +134,11 @@
                 <td>to</td>
             </tr>
             <tr>
-                <td><div>た</div></td>
-                <td><div>ち</div></td>
-                <td><div>つ</div></td>
-                <td><div>て</div></td>
-                <td><div>と</div></td>
+                <td class="tabcaract">た</td>
+                <td class="tabcaract">ち</td>
+                <td class="tabcaract">つ</td>
+                <td class="tabcaract">て</td>
+                <td class="tabcaract">と</td>
             </tr>
             <tr>
                 <td>na</td>
@@ -152,11 +148,11 @@
                 <td>no</td>
             </tr>
             <tr>
-                <td><div>な</div></td>
-                <td><div>に</div></td>
-                <td><div>ぬ</div></td>
-                <td><div>ね</div></td>
-                <td><div>の</div></td>
+                <td class="tabcaract">な</td>
+                <td class="tabcaract">に</td>
+                <td class="tabcaract">ぬ</td>
+                <td class="tabcaract">ね</td>
+                <td class="tabcaract">の</td>
             </tr>
             <tr>
                 <td>ha</td>
@@ -166,11 +162,11 @@
                 <td>ho</td>
             </tr>
             <tr>
-                <td><div>は</div></td>
-                <td><div>ひ</div></td>
-                <td><div>ふ</div></td>
-                <td><div>へ</div></td>
-                <td><div>ほ</div></td>
+                <td class="tabcaract">は</td>
+                <td class="tabcaract">ひ</td>
+                <td class="tabcaract">ふ</td>
+                <td class="tabcaract">へ</td>
+                <td class="tabcaract">ほ</td>
             </tr>
             <tr>
                 <td>ma</td>
@@ -180,11 +176,11 @@
                 <td>mo</td>
             </tr>
             <tr>
-                <td><div>ま</div></td>
-                <td><div>み</div></td>
-                <td><div>む</div></td>
-                <td><div>め</div></td>
-                <td><div>も</div></td>
+                <td class="tabcaract">ま</td>
+                <td class="tabcaract">み</td>
+                <td class="tabcaract">む</td>
+                <td class="tabcaract">め</td>
+                <td class="tabcaract">も</td>
             </tr>
             <tr>
                 <td>ya</td>
@@ -192,9 +188,9 @@
                 <td>yo</td>
             </tr>
             <tr>
-                <td><div>や</div></td>
-                <td><div>ゆ</div></td>
-                <td><div>よ</div></td>
+                <td class="tabcaract">や</td>
+                <td class="tabcaract">ゆ</td>
+                <td class="tabcaract">よ</td>
             </tr>
             <tr>
                 <td>ra</td>
@@ -204,27 +200,33 @@
                 <td>ro</td>
             </tr>
             <tr>
-                <td><div>ら</div></td>
-                <td><div>り</div></td>
-                <td><div>る</div></td>
-                <td><div>れ</div></td>
-                <td><div>ろ</div></td>
+                <td class="tabcaract">ら</td>
+                <td class="tabcaract">り</td>
+                <td class="tabcaract">る</td>
+                <td class="tabcaract">れ</td>
+                <td class="tabcaract">ろ</td>
             </tr>
             <tr>
                 <td>wa</td>
                 <td>wo</td>
             </tr>
             <tr>
-                <td><div>わ</div></td>
-                <td><div>を</div></td>
+                <td class="tabcaract">わ</td>
+                <td class="tabcaract">を</td>
             </tr>
             <tr>
                 <td>n</td>
             </tr>
             <tr>
-                <td><div>ん</div></td>
+                <td class="tabcaract">ん</td>
             </tr>
         </table>
+        
+        <div class="textAleat">
+            <button class="btntxtAleat" onclick="aleat()">Générer un texte aléatoire</button>
+            <div id="textAleat"></div>
+            <input type="text" maxlength="20">
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="script.js"></script>
