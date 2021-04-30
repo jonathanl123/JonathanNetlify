@@ -1,6 +1,20 @@
+document.getElementById('envoie').addEventListener("submit", function(e){
+    e.preventDefault();
+    var inputs = document.querySelectorAll('form div div input');
+    var n = 0;
+    for(var i=0; i<inputs.length;i++){
+        if(!inputs[i].value){
+            n++;
+        }
+    }
+    var resultat = 46-n;
+    alert("Vous avez "+n+" erreurs, votre score est de "+resultat+"/46.");
+})
+
+
 function affiche(){
     var c = document.getElementById('correction');
-    c.style.visibility = 'visible' ;
+    c.style.visibility = 'visible';
 }
 
 function cacher(){
