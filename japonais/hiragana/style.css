@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: black;
+    overflow-x: hidden;
 }
 
 body{
@@ -112,6 +113,20 @@ form div input{
 .aff, .hide{
     position: absolute;
     left: 40vw;
+    border-radius: 20px;
+    padding: 5px 7px;
+    border: 2px solid black;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.hide:hover{
+    padding: 7px 9px;
+}
+
+.aff:hover{
+    padding: 7px 9px;
 }
 
 .aff{
@@ -123,15 +138,85 @@ form div input{
 }
 
 .textAleat{
-    position: absolute;
-    top: 110vh;
-    left: 10vw;
-    bottom: 10px;
+    width: 50vw;
+    background-color: #fff;
+    margin-top: 5vh;
+    padding: 0 0 30px 0;
 }
 
-.btnAleat{
-    padding: 4px 5px;
+.btntxtAleat{
+    border: 2px solid white;
+    padding: 5px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    background-color:white;
+    color: black;
+    font-size: 15px;
 }
 
+.valid2{
+    padding: 8px 11px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 22vw;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.valid2:hover{
+    background-color: cadetblue;
+    color: white;
+}
+
+.zoneex2{
+    background-color: #000;
+    width: 100vw;
+    height: 50vh;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.zoneex2 > p{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.zoneex2 > input{
+    margin-left: 45vw;
+}
+
+.text{
+    background-color: white;
+    color: black;
+}
+
+.form2{
+    width: 50%;
+    height: 200px;
+    background-color: #fff;
+    margin-left: 25vw;
+}
+
+.form2 > p{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    height: 50px;
+}
+
+.form2 > input{
+    font-weight: bold;
+    font-size: 30px;
+    width: 90%;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 5% 0 0 5%;
+    outline: none;
+}
 
 

@@ -221,11 +221,15 @@
                 <td class="tabcaract">ん</td>
             </tr>
         </table>
-        
-        <div class="textAleat">
-            <button class="btntxtAleat" onclick="aleat()">Générer un texte aléatoire</button>
-            <div id="textAleat"></div>
-            <input type="text" maxlength="20">
+        <div class="zoneex2">
+            <p class="info-range">8 charactères</p>
+            <input type="range" name="range" id="range" min="5" max="15" value="8" step="1">
+            <button class="btntxtAleat" id="randomize">Choisir</button>
+            <form id="form2" class="form2">
+               <p class="text"></p>
+                <input type="text" id="reponse"><br />
+               <button class="valid2" type="submit">Valider</button>
+            </form>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
