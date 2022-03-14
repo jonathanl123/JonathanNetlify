@@ -1,0 +1,138 @@
+/********
+*******/
+/***PAGE ABOUT.HTML*******/
+/*****************/
+*{
+    box-sizing: border-box;
+}
+
+section{
+    width: 100vw;
+    height: 120vh;
+    padding-top: 10vh;
+}
+
+.timeline{
+    width: 60vw;
+    margin: auto;
+    padding-top: 5vh;
+}
+
+section h1{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.6em;
+}
+
+.imgmoi{
+    position: fixed;
+    left: 40px;
+    top: 30%;
+}
+
+.content{
+    background: #444;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.content h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content p{
+    line-height: 1.4;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content .time{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    opacity: 0.5;
+}
+
+
+@media (min-width: 700px){
+    .content{
+        width: 50%;
+    }
+    
+    .content:nth-child(odd){
+        float: left;
+        clear: both;
+        transform:translateX(-40px);
+    }
+    .content:nth-child(even){
+        float: right;
+        clear: both;
+        transform:translateX(25px);
+    }
+    
+    .timeline::before{
+        content: "";
+        width: 1px;
+        height: 92vh;
+        background: white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .content::before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: whitesmoke;
+        position: absolute;
+        top: 50%;
+        right: -40px;
+        border-radius: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+    
+    .content:nth-child(even)::before{
+        left: -41px;
+    }
+    
+    .content:hover::before{
+        background-color: #2196f3;
+    }
+    
+    .content::after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: #444;
+        position: absolute;
+        top: 50%;
+        right: -8px;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    
+    .content:nth-child(even)::after{
+        left: -8px;
+    }
+}
+
+@media (max-width: 1050px){
+    .imgmoi{
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px){
+    
+}
+
+
+
+
+

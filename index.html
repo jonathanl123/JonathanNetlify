@@ -3,40 +3,33 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="jonathan">
-        <meta name="description" content="Jonathan Lecompte. Etudiant/Graphiste à Laval.">
         <title>Jonathan Lecompte</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="accueil.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="fullpage/fullpage.min.css">
+        <link rel="icon" href="medias/imgSite/myhead.png">
     </head>
- 
     <body>
-        <header>
-        <nav class="menu_nav">
+        <nav class="navbar">
             <ul>
-                <li><a href="#home">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="works.html">Réalisations</a></li>
-                <li><a href="about.html">Mon parcours</a></li>
-                <li><a href="#contacter">Contact</a></li>
+                <!--<li><a href="about.html">Mon parcours</a></li>
+                <li><a href="#contacter">Contact</a></li>-->
             </ul>
+            <button class="burger">
+                <span class="bar"></span>  
+            </button>
         </nav>
-        </header>
-        <section class="header_accueil" id="home">
-            <h1 class="my-name">Jonathan Lecompte</h1>
-            <a href="#apropos"><img src="medias/imgSite/iconfleche.png"></a>
-        </section>
-        
-        <section id="apropos" class="about_me">
-            <div class="container-about">
-                <span>À PROPOS</span>
-                <span>Bonjour ! Je m'appelle Jonathan Lecompte, j'ai 19 ans et je suis actuellement en deuxième année de DUT Métiers du Multimédia et de l'Internet à Laval. J'habite tout près de Rennes en Bretagne. Je suis passionné de cinéma, de sport et de graphisme. Après mes études j'aimerai pouvoir travailler dans la communication digitale et marketing ou dans le graphisme. Je suis à la recherche d'un stage en agence de communication, si vous êtes intéressé par mon profil n'hésitez pas à me contacter via le formulaire ou par mail: <strong>jonathanlecompte.pro@gmail.com</strong>
-                </span>
-                <a href="medias/cv/monCV.pdf" target="_blank" class="btncv">CV</a>
+        <header class="entete">
+            <div>
+                <h1>JONATHAN LECOMPTE</h1>
+                <h2>Étudiant, entrepreneur et investisseur</h2>
+                <a href="medias/cv/CV_Jonathan_Lecompte.pdf" target="_blank" class="btncv">CV</a>
             </div>
-        </section>
-        
+        </header>
         <section class="me_contacter" id="contacter">
             <div class="div-form">
                 <p>Contactez moi</p>
@@ -49,17 +42,22 @@
                 </form>
             </div>
         </section>
-        <footer>
-                <h3>Contact : E-mail : jonathanlecompte.18@gmail.com</h3>
+        <footer class="theFooter">
+            <div class="reseauxS">
                 <a href="https://fr-fr.facebook.com/people/Jonathan-Lecompte/100009683825753" target="_blank"><img src="medias/reseaux/facebook.png"></a> 
                 <a href="https://fr.linkedin.com/in/jonathan-lecompte-476a391ab?trk=people-guest_people_search-card" target="_blank"><img src="medias/reseaux/linkedin.png"></a> 
-                <a href="https://www.instagram.com/jonathanlcp/" target="_blank"><img src="medias/reseaux/instagram.png"></a>  
+                <a href="https://www.instagram.com/jonathanlcp/" target="_blank"><img src="medias/reseaux/instagram.png"></a>
+            </div>
+            <div class="mailPro">
+                <h3>E-mail : jonathanlecompte.pro@gmail.com</h3>
+            </div>
         </footer>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var menu = document.querySelector("ul");
+                menu.classList.toggle("menuFix", window.scrollY>0);
+            })
+        </script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
-    
 </html>
-
-
-
-
-

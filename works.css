@@ -1,0 +1,100 @@
+/****Projets ****/
+
+.projets{
+    width: 100vw;
+    padding-top: 15vh;
+}
+
+article{
+    width: 40vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.section-portfolio{
+    padding-bottom: 5vh;
+}
+
+.section-portfolio div a img{
+    transition: 0.5s;
+    width: 100%;
+    height: 45vh;
+}
+    
+.section-portfolio div a:hover img{
+    filter: brightness(0.6);
+}
+
+
+.projets h1{
+    z-index: 10;
+    position: absolute;
+    color: #fff;
+    font-size: 3.5em;
+}
+
+/***** Responsive ****/
+
+@media (max-width: 1500px){
+    article{
+        width: 50vw;
+    }
+    
+    .section-portfolio div a img{
+        width: 100%;
+        height: 45vh;
+    }
+    
+}
+
+@media (max-width: 1300px){
+    article{
+        width: 55vw;
+    }
+    
+    .section-portfolio div a img{
+        width: 100%;
+        height: 45vh;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    article{
+        width: 80vw;
+    }
+    
+    .section-portfolio div a img{
+        width: 100%;
+        height: 45vh;
+    }
+    
+}
+
+@media (max-width: 650px){
+    article{
+        width: 80vw;
+    }
+    
+    .section-portfolio div a img{
+        width: 100%;
+        height: 30vh;
+    }
+    
+}
+
+@media (max-width: 400px){
+    article{
+        width: 80vw;
+    }
+    
+    .section-portfolio div a img{
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .projets h1{
+        font-size: 2em;
+    }
+    
+}

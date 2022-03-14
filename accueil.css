@@ -1,0 +1,168 @@
+/***/
+
+.entete{
+    display: flex;
+    height: 92vh;
+}
+
+header div{
+    margin: auto;
+    text-align: center;
+}
+
+header div h1, header div h2{
+    color: darkgray;
+}
+
+header div h2{
+    margin-bottom: 4vh;
+}
+
+.btncv{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 15px;
+    transition: 0.2s;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.btncv:hover{
+    cursor: pointer;
+    background-color: #000011;
+    color: #fff;
+    border: #fff solid 2px;
+}
+
+
+/*PAGE DE PRESENTATION*/
+
+/*
+
+.header_accueil a{
+    position: absolute;
+    top: 70%;
+    cursor: pointer;
+    animation: anim-fleche 2.5s linear infinite;
+}
+
+@keyframes anim-fleche{
+    0%{
+        top: 70%;
+    }
+    50%{
+        top: 75%;
+    }
+    100%{
+        top: 70%;
+    }
+}
+*/
+
+
+/* SECTION CONTACT PLUS FOOTER*/
+/*********/
+/**/
+
+.me_contacter{
+    display: flex;
+    height: 92vh;
+    justify-content: center;
+    background-color: #000;
+}
+
+.div-form{
+    width: 20vw;
+    margin: auto;
+}
+
+.div-form p{
+    text-align: center;
+    color: darkgray;
+    font-weight: 900;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.div-form form input, .div-form form button{
+    margin: 20px 0;
+}
+
+.div-form form input, .div-form form textarea{
+    border-bottom: 3px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background: transparent;
+    resize: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+.div-form form input{
+    padding: 5px 0 5px 5px; 
+}
+
+.div-form form textarea{
+    padding: 5px 0 0 5px;
+}
+
+.contact-form button{
+    padding: 10px 25px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: transparent;
+    border: none;
+}
+
+.contact-form button:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    cursor: pointer;
+}
+
+/*******Responsive page Home *******/
+
+.entete{
+    grid-area: enTete;
+}
+
+.me_contacter{
+    grid-area: contactForm;
+}
+
+.theFooter{
+    grid-area: footer;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: "enTete contactForm"
+                         "footer footer";
+}
+
+@media (max-width: 1000px){
+    body{
+        grid-template-columns: 100vw;
+        grid-template-areas: "enTete"
+                             "contactForm"
+                             "footer";
+    }
+    
+    .div-form{
+        width: 85vw;
+    }
+}
