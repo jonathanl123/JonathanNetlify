@@ -2,7 +2,7 @@
 
 .entete{
     display: flex;
-    height: 90vh;
+    height: 89vh;
 }
 
 header div{
@@ -72,7 +72,7 @@ header div h2{
 
 .me_contacter{
     display: flex;
-    height: 90vh;
+    height: 89vh;
     justify-content: center;
     background-color: #000;
 }

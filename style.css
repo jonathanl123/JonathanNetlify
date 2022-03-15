@@ -77,11 +77,10 @@ nav ul li a:hover{
 /****pied de page *****/
 
 footer{
-    height: 9vh;
+    height: 11vh;
     background-color: #293133;
     display: flex;
     align-items: center;
-    padding: 5px 0;
 }
 
 .reseauxS{
