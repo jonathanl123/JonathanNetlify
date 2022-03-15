@@ -37,24 +37,24 @@ article{
 
 @media (max-width: 1500px){
     article{
-        width: 50vw;
+        width: 45vw;
     }
     
     .section-portfolio div a img{
         width: 100%;
-        height: 45vh;
+        height: 40vh;
     }
     
 }
 
 @media (max-width: 1300px){
     article{
-        width: 55vw;
+        width: 45vw;
     }
     
     .section-portfolio div a img{
         width: 100%;
-        height: 45vh;
+        height: 40vh;
     }
     
 }
@@ -97,4 +97,12 @@ article{
         font-size: 2em;
     }
     
+}
+
+
+@media (min-width: 1150px){
+    .projets{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

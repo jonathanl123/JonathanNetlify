@@ -4,6 +4,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Paytone+One&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -76,12 +78,14 @@ nav ul li a:hover{
 
 footer{
     height: 10vh;
+    background-color: #293133;
+    display: flex;
+    align-items: center;
 }
 
 .reseauxS{
-    width: 10vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -100,6 +104,11 @@ footer h3{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     padding: 10px;
+}
+
+.mailPro a{
+    color: #fff;
+    padding-left: 5px;
 }
 
 
