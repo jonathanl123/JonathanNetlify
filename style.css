@@ -81,6 +81,7 @@ footer{
     background-color: #293133;
     display: flex;
     align-items: center;
+    padding: 5px 0;
 }
 
 .reseauxS{
