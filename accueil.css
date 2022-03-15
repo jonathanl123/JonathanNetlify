@@ -2,12 +2,13 @@
 
 .entete{
     display: flex;
-    height: 92vh;
+    height: 90vh;
 }
 
 header div{
     margin: auto;
     text-align: center;
+    padding-top: 10vh;
 }
 
 header div h1, header div h2{
@@ -70,14 +71,15 @@ header div h2{
 
 .me_contacter{
     display: flex;
-    height: 92vh;
+    height: 90vh;
     justify-content: center;
     background-color: #000;
 }
 
 .div-form{
-    width: 20vw;
+    width: 27vw;
     margin: auto;
+    padding-top: 10vh;
 }
 
 .div-form p{
@@ -134,6 +136,9 @@ header div h2{
 }
 
 /*******Responsive page Home *******/
+nav{
+    grid-area: nav;
+}
 
 .entete{
     grid-area: enTete;
@@ -150,7 +155,8 @@ header div h2{
 body{
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-areas: "enTete contactForm"
+    grid-template-areas: "nav nav"
+                         "enTete contactForm"
                          "footer footer";
 }
 
@@ -158,6 +164,7 @@ body{
     body{
         grid-template-columns: 100vw;
         grid-template-areas: "enTete"
+                             "nav"
                              "contactForm"
                              "footer";
     }
