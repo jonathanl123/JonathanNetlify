@@ -49,7 +49,7 @@ article{
 
 @media (max-width: 1300px){
     article{
-        width: 45vw;
+        width: 60vw;
     }
     
     .section-portfolio div a img{
@@ -100,7 +100,7 @@ article{
 }
 
 
-@media (min-width: 1150px){
+@media (min-width: 1300px){
     .projets{
         display: flex;
         flex-wrap: wrap;

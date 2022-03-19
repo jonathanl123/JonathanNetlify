@@ -178,3 +178,9 @@ body{
         width: 85vw;
     }
 }
+
+@media (min-width: 1000px){
+    .navbar ul li:nth-child(3){
+        display: none;
+    }
+}
