@@ -31,6 +31,7 @@ article{
     position: absolute;
     color: #fff;
     font-size: 3.5em;
+    padding-left: 10px;
 }
 
 /***** Responsive ****/
